@@ -131,7 +131,7 @@ if __name__ == "__main__":
     preds = clf.predict_proba(X_test)[:,1]
 
     sample.loc[:, "target"] = preds
-    sample.to_csv("submission_cat.csv", index = False)
+    sample.to_csv("./models/submission_cat.csv", index = False)
 
     
     
